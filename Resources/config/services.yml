@@ -1,4 +1,10 @@
 services:
-#    thread_labs_open_weather_map.example:
-#        class: ThreadLabs\OpenWeatherMapBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+
+    threadlabs.open_weather_map.api:
+        class: ThreadLabs\OpenWeatherMapBundle\Api\OpenWeatherMap
+        arguments:
+            - '@threadlabs.open_weather_map.client'
+            - '%threadlabs.open_weather_map.api_id%'
+
+    threadlabs.open_weather_map.client:
+        class:  GuzzleHttp\Client
