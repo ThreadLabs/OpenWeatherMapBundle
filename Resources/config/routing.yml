@@ -1,3 +1,0 @@
-thread_labs_open_weather_map_homepage:
-    path:     /
-    defaults: { _controller: ThreadLabsOpenWeatherMapBundle:Default:index }
