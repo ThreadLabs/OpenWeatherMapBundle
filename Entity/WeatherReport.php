@@ -2,9 +2,9 @@
 
 namespace ThreadLabs\OpenWeatherMapBundle\Entity;
 
-use ThreadLabs\OpenWeatherMapBundle\Value\Pressure;
-use ThreadLabs\OpenWeatherMapBundle\Value\Speed;
-use ThreadLabs\OpenWeatherMapBundle\Value\Temperature;
+use ThreadLabs\ValueObjectsBundle\Value\UnitMeasurement\Pressure;
+use ThreadLabs\ValueObjectsBundle\Value\UnitMeasurement\Speed;
+use ThreadLabs\ValueObjectsBundle\Value\UnitMeasurement\Temperature;
 
 /**
  * @author Stephen Wilkinson
